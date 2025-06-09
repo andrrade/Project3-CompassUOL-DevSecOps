@@ -18,3 +18,7 @@
     <img src="https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.png" alt="Kubernetes" width="50" title="Kubernetes"/></a>
 </div>
 
+<p align="center">
+  <br>
+  <img src="https://github.com/user-attachments/assets/640084f8-0923-4a03-8ffd-fe086813bdb4" alt="CompassUOL Logo" width="250">
+</p>
