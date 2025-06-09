@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/90b07a33-385f-45a0-a706-8c65b6975d67" alt="Logo do Projeto 3" width="400">
+  <img src="./assets/logos/projeto3.png" alt="Logo do Projeto 3" width="400">
 </p>
 <br>
 
@@ -20,5 +20,5 @@
 
 <p align="center">
   <br>
-  <img src="https://github.com/user-attachments/assets/640084f8-0923-4a03-8ffd-fe086813bdb4" alt="CompassUOL Logo" width="250">
+  <img src="./assets/logos/compassUol.png" alt="CompassUOL Logo" width="250">
 </p>
