@@ -11,8 +11,6 @@ Nesta fase, execute as seguintes atividades:
 
 ---
 
-Para este projeto, utilize o sistema operacional [Pop!\_OS](https://system76.com/pop/).
-
 ### Passos:
 
 1. Crie um repositório no GitHub:
@@ -31,8 +29,6 @@ kubectl get pods
 ```
 
 ![Imagem 01](../../assets/fase01/img01.png)
-![Imagem 02](../../assets/fase01/img02.png)
-![Imagem 03](../../assets/fase01/img03.png)
 
 ---
 
@@ -47,11 +43,18 @@ kubectl get pods
   cd backend
   ```
 
+![Imagem 02](../../assets/fase01/img02.png)
+
 * Instale o Python (confirme a versão com):
 
   ```
   python3 --version
   ```
+
+> [!NOTE]
+> Para esse projeto utilizei a versão 3.10.12
+
+![Imagem 03](../../assets/fase01/img03.png)
 
 * Crie e ative o ambiente virtual:
 
@@ -65,6 +68,9 @@ kubectl get pods
   ```
   source venv/bin/activate.fish
   ```
+
+
+
 
 ![Imagem 04](../../assets/fase01/img04.png)
 

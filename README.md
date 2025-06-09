@@ -34,6 +34,8 @@
 * 🟢 **Node.js**: Runtime JavaScript usado no backend.
 * ⚛️ **React**: Biblioteca JavaScript para criação do frontend.
 
+Para este projeto, utilizei o sistema operacional [Pop!\_OS](https://system76.com/pop/).
+
 ## Sumário 📝
 
 - [Enunciado](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/PB-Projeto-DevOps.pdf)
