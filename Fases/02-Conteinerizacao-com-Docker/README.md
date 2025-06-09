@@ -1,6 +1,6 @@
 Fase 2: Conteinerização com Docker
 
-Nesta fase é esperado que se execute esse código em um container e depois faça a publicação deste container no Dockerhub
+Nesta fase é esperado que se execute esse código em um container e depois faça a publicação deste container no Dockerhub:
 
 - Criar o dockerfile
 - Fazer build: docker build -t usuario/fastapi-hello:latest
