@@ -18,9 +18,23 @@
     <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" title="Node.js"/></a>
   <a href="https://reactjs.org/" target="_blank">
     <img src="https://img.shields.io/badge/React-20232a?style=for-the-badge&logo=react&logoColor=61dafb" alt="React" title="React"/></a>
+  <a href="https://hub.docker.com/" target="_blank">
+    <img src="https://img.shields.io/badge/Docker_Hub-003f8c?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Hub" title="Docker Hub"/></a>
 </div>
 
-# Sumário 📝
+---
+
+## 💻 Tecnologias Utilizadas
+
+* 🐍 **FastAPI**: Framework web em Python.
+* 🐳 **Docker**: Para conteinerização da aplicação.
+* 📦 **Docker Hub**: Registro público de imagens.
+* 🧰 **Jenkins**: Ferramenta de CI/CD.
+* ☸️ **Kubernetes (Rancher Desktop)**: Orquestrador de contêineres utilizado localmente.
+* 🟢 **Node.js**: Runtime JavaScript usado no backend.
+* ⚛️ **React**: Biblioteca JavaScript para criação do frontend.
+
+## Sumário 📝
 
 - [Enunciado](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/PB-Projeto-DevOps.pdf)
 
