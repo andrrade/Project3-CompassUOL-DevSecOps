@@ -22,36 +22,36 @@
 
 - [Enunciado](#enunciado)
 
-- [Fase 1](#fase-1)  
+- [Fase 1](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/Fases/01-Preparacao-do-Projeto/README.md)  
   - [x] Criar um repositório de código no Github para inserir a aplicação de exemplo  
   - [x] Criar conta no Docker Hub  
   - [x] Verificar acesso ao cluster Kubernetes local  
   - [ ] Validar execução local com uvicorn  
 
-- [Fase 2](#fase-2)  
+- [Fase 2](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/Fases/02-Conteinerizacao-com-Docker/README.md)  
   - [ ] Criar o Dockerfile  
   - [ ] Fazer build: `docker build -t usuario/fastapi-hello:latest`  
   - [ ] Fazer push: `docker push usuario/fastapi-hello:latest`  
   - [ ] Versionar o Dockerfile junto com o código da aplicação no GitHub  
 
-- [Fase 3](#fase-3)  
+- [Fase 3](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/Fases/03-Arquivos-de-Deploy-no-Kubernetes/README.md)  
   - [ ] Criar o YAML de deployment da aplicação e aplicá-lo no cluster  
   - [ ] Criar o YAML de service do deployment e aplicá-lo no cluster  
 
-- [Fase 4](#fase-4)  
+- [Fase 4](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/Fases/04-Jenkins-Build-Push/README.md)  
   - [ ] Criar a pipeline no Jenkins  
   - [ ] Realizar o stage de build  
   - [ ] Realizar o stage de push  
 
-- [Fase 5](#fase-5)  
+- [Fase 5](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/Fases/05-Jenkins-Deploy-no-Kubernetes/README.md)  
   - [ ] Jenkins precisa acessar o `kubectl` (usar agent com `kubectl` e `kubeconfig` configurados)  
   - [ ] Adicionar etapa de deploy no `Jenkinsfile`  
   - [ ] Testar a pipeline completa  
 
-- [Fase 6](#fase-6)  
+- [Fase 6](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/tree/main/Fases/06-Documentacao)  
   - [ ] Criar `README.md`  
 
-- [Extras](#extras)  
+- [Extras](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/tree/main/Fases/07-Desafios-Extras)  
   - [ ] Criar uma etapa após o push da imagem de container, realizar o scanner de vulnerabilidades com o **Trivy**  
   - [ ] Criar um webhook com o **Slack** ou **Discord** para avisar quando a pipeline for atualizada no ambiente Kubernetes  
   - [ ] Subir o **SonarQube** em ambiente Docker, conectá-lo ao Jenkins e enviar o código para análise **SAST**  
