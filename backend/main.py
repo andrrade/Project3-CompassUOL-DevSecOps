@@ -15,6 +15,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+async def root():
+    return {"message": "Bem-vinda à API do Projeto CompassUOL!"}
+
 # 1️⃣ Endpoint que retorna uma cor aleatória para mudar a cor da página
 @app.get("/color")
 async def get_random_color():
@@ -46,6 +50,16 @@ async def get_current_time():
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     return {"current_time": now}
 
+# 5️⃣ Endpoint que redireciona para uma piada (API pública)
+@app.get("/joke")
+async def joke():
+    async with httpx.AsyncClient() as client:
+        response = await client.get("https://official-joke-api.appspot.com/random_joke")
+        if response.status_code == 200:
+            joke_data = response.json()
+            return joke_data
+        return JSONResponse(content={"error": "Failed to fetch joke"}, status_code=500)
+
 @app.get("/scare")
 async def scare():
     scare_images = [
@@ -54,7 +68,6 @@ async def scare():
     ]
     random_scare = random.choice(scare_images)
     return {"scare_image_url": random_scare}
-
 
 @app.get("/lookalike")
 async def lookalike():
