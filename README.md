@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/90b07a33-385f-45a0-a706-8c65b6975d67" alt="Logo do Projeto 3" width="400">
+</p>
+<br>
+
 # Deploy automatizado de API com FastAPI, Jenkins e Kubernetes
 
 <div align="center">
