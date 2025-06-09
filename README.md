@@ -20,7 +20,7 @@
 
 # Sumário 📝
 
-- [Enunciado](#enunciado)
+- [Enunciado](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/PB-Projeto-DevOps.pdf)
 
 - [Fase 1](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/Fases/01-Preparacao-do-Projeto/README.md)  
   - [x] Criar um repositório de código no Github para inserir a aplicação de exemplo  
