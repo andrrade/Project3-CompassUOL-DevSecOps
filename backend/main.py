@@ -57,7 +57,8 @@ async def joke():
         response = await client.get("https://official-joke-api.appspot.com/random_joke")
         if response.status_code == 200:
             joke_data = response.json()
-            return joke_data
+            full_joke = f"{joke_data['setup']} {joke_data['punchline']}"
+            return {"joke": full_joke}
         return JSONResponse(content={"error": "Failed to fetch joke"}, status_code=500)
 
 @app.get("/scare")
