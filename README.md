@@ -20,35 +20,42 @@
 
 # Sumário 📝
 
-- [Enunciado]()
-- [Fase 1]()
-  [X] Criar um repositório de código no Github para inserir a aplicação de exemplo
-  [X] Criar conta no Docker Hub
-  [X] Verificar acesso ao cluster Kubernetes local
-  [ ] Validar execução local com uvicorn
-- [Fase 2]()
-  [ ]Criar o dockerfile
-  [ ] Fazer build: docker build -t usuario/fastapi-hello:latest
-  [ ] Fazer push: docker push usuario/fastapi-hello:latest
-  [ ] Versionar o dockerfile junto com o código da aplicação no github
-- [Fase 3]()
-  [ ] Criar o yaml de deployment da aplicação e aplicá-lo no cluster
-  [ ] Criar o yaml de service do deploymento e aplicá-lo no cluster
-- [Fase 4]()
-  [ ]Criar a pipeline no Jenkins
-  [ ]Realizar o stage de build
-  [ ]Realizar o stage de push
-- [Fase 5]()
-  [ ] Jenkins precisa acessar o kubectl (usar agent com kubectl e kubeconfig configurados)
-  [ ] Adicionar etapa de deploy no Jenkinsfile
-  [ ]Testar a pipeline completa
-- [Fase 6]()
-  [ ]Criar README.md
-- [Extras]()
-  [ ] Criar uma etapa após o push da imagem de container, realizar o scanner de vulnerabilidades, utilizando o Trivy
-  [ ] Criar um webhook com o Slack ou Discord para avisar quando a pipeline for atualizar no ambiente Kubernetes
-  [ ] Subir o Sonarqube em ambiente Docker e conectá-lo com o Jenkins e enviar todo o código da aplicação para a análise SAST
-  [ ] Utilizar Helm Chart para implantar a aplicação no Kubernetes
+- [Enunciado](#enunciado)
+
+- [Fase 1](#fase-1)  
+  - [x] Criar um repositório de código no Github para inserir a aplicação de exemplo  
+  - [x] Criar conta no Docker Hub  
+  - [x] Verificar acesso ao cluster Kubernetes local  
+  - [ ] Validar execução local com uvicorn  
+
+- [Fase 2](#fase-2)  
+  - [ ] Criar o Dockerfile  
+  - [ ] Fazer build: `docker build -t usuario/fastapi-hello:latest`  
+  - [ ] Fazer push: `docker push usuario/fastapi-hello:latest`  
+  - [ ] Versionar o Dockerfile junto com o código da aplicação no GitHub  
+
+- [Fase 3](#fase-3)  
+  - [ ] Criar o YAML de deployment da aplicação e aplicá-lo no cluster  
+  - [ ] Criar o YAML de service do deployment e aplicá-lo no cluster  
+
+- [Fase 4](#fase-4)  
+  - [ ] Criar a pipeline no Jenkins  
+  - [ ] Realizar o stage de build  
+  - [ ] Realizar o stage de push  
+
+- [Fase 5](#fase-5)  
+  - [ ] Jenkins precisa acessar o `kubectl` (usar agent com `kubectl` e `kubeconfig` configurados)  
+  - [ ] Adicionar etapa de deploy no `Jenkinsfile`  
+  - [ ] Testar a pipeline completa  
+
+- [Fase 6](#fase-6)  
+  - [ ] Criar `README.md`  
+
+- [Extras](#extras)  
+  - [ ] Criar uma etapa após o push da imagem de container, realizar o scanner de vulnerabilidades com o **Trivy**  
+  - [ ] Criar um webhook com o **Slack** ou **Discord** para avisar quando a pipeline for atualizada no ambiente Kubernetes  
+  - [ ] Subir o **SonarQube** em ambiente Docker, conectá-lo ao Jenkins e enviar o código para análise **SAST**  
+  - [ ] Utilizar **Helm Chart** para implantar a aplicação no Kubernetes  
 
 <p align="center">
   <br>
