@@ -15,8 +15,8 @@ Para fazer o projeto, estou utilizando o Sistema Operacional [Pop!_OS](https://s
 1. [Criar um repositório no GitHub](https://docs.github.com/pt/repositories/creating-and-managing-repositories/creating-a-new-repository)
 2. [Criar conta no Docker Hub](https://docs.docker.com/accounts/create-account/)
 3. Usei o [Rancher Desktop](https://docs.rancherdesktop.io/getting-started/installation/).
+
 Teste local do Kubernetes:
-<img src="../../assets/fase01/img01.png" alt="img01" title="img01"/>
 
 ```sh
 kubectl version --client
@@ -25,5 +25,7 @@ kubectl version --client
 ```sh
 kubectl get pods
 ```
+
+<img src="../../assets/fase01/img01.png" alt="img01" title="img01"/>
 
 4. Validar execução local com uvicorn
