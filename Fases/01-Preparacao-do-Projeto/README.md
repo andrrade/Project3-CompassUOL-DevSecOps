@@ -63,14 +63,12 @@ kubectl get pods
   source venv/bin/activate
   ```
 
-  *Se usar shell fish, ative com:*
+> [!IMPORTANT] 
+> Se usar shell fish, ative com:
 
   ```
   source venv/bin/activate.fish
   ```
-
-
-
 
 ![Imagem 04](../../assets/fase01/img04.png)
 
@@ -104,8 +102,7 @@ kubectl get pods
 
 6. Exemplo de teste de rotas e respostas:
 
-![Imagem 08](../../assets/fase01/img07.png)
-![Imagem 09](../../assets/fase01/img07.png)
+![Imagem 09](../../assets/fase01/img08.png)
 ![Imagem 10](../../assets/fase01/img10.png)
 ![Imagem 11](../../assets/fase01/img11.png)
 
