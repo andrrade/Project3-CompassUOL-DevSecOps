@@ -1,120 +1,160 @@
-# Fase 1: Preparação do projeto
+# Fase 1: Preparação do Projeto
 
-Nesta fase, execute as seguintes atividades:
+Este documento descreve a configuração inicial do ambiente de desenvolvimento para a aplicação de exemplo com FastAPI, React e Kubernetes.
 
-1. Crie um repositório no GitHub para hospedar a aplicação de exemplo.
-2. Crie uma conta no Docker Hub.
-3. Verifique o acesso ao cluster Kubernetes local.
-4. Valide a execução local da aplicação com `uvicorn`.
+## 📋 Visão Geral
 
-**Entregáveis:** Código rodando localmente, repositório GitHub criado e ambiente preparado.
+Esta fase estabelece a base para o desenvolvimento, incluindo:
+- Configuração do repositório GitHub
+- Preparação do ambiente Docker
+- Configuração do cluster Kubernetes local
+- Validação da aplicação rodando localmente
 
----
+## 🎯 Objetivos
 
-### Passos:
+- [x] Criar repositório no GitHub
+- [x] Configurar conta no Docker Hub
+- [x] Verificar acesso ao cluster Kubernetes local
+- [x] Validar execução local da aplicação
 
-1. Crie um repositório no GitHub:
-   [Como criar um repositório](https://docs.github.com/pt/repositories/creating-and-managing-repositories/creating-a-new-repository)
+## 🛠️ Pré-requisitos
 
-2. Crie uma conta no Docker Hub:
-   [Como criar conta no Docker Hub](https://docs.docker.com/accounts/create-account/)
+### Software Necessário
+- **Python** 3.9+ 
+- **Node.js** (versão LTS recomendada)
+- **Git**
+- **Rancher Desktop**
 
-3. Instale e configure o [Rancher Desktop](https://docs.rancherdesktop.io/getting-started/installation/) para usar o Kubernetes localmente.
+### Contas Necessárias
+- Conta no [GitHub](https://github.com)
+- Conta no [Docker Hub](https://hub.docker.com)
 
-4. Teste o Kubernetes localmente com os comandos:
+## 🚀 Configuração do Ambiente
 
-```sh
+### 1. Repositório GitHub
+
+Crie um novo repositório seguindo a [documentação oficial](https://docs.github.com/pt/repositories/creating-and-managing-repositories/creating-a-new-repository).
+
+**Repositório do projeto:** https://github.com/andrrade/Aplicacao-Exemplo-Project3
+
+### 2. Docker Hub
+
+Crie sua conta seguindo o [guia oficial](https://docs.docker.com/accounts/create-account/).
+
+### 3. Kubernetes Local
+
+Instale o [Rancher Desktop](https://docs.rancherdesktop.io/getting-started/installation/) para gerenciar o Kubernetes localmente.
+
+**Validação da instalação:**
+```bash
 kubectl version --client
 kubectl get pods
 ```
 
-![Imagem 01](../../assets/fase01/img01.png)
+![Configuração Kubernetes](../../assets/fase01/img01.png)
 
----
+## 💻 Configuração da Aplicação
 
-## Backend
+### Backend (FastAPI)
 
-5. Valide a execução local com `uvicorn`:
+#### 1. Clone do Repositório
+```bash
+git clone https://github.com/andrrade/Aplicacao-Exemplo-Project3.git
+cd Aplicacao-Exemplo-Project3/backend
+```
 
-* Clone apenas a pasta `backend` do repositório:
+![Clone do repositório](../../assets/fase01/img02.png)
 
-  ```
-  git clone https://github.com/andrrade/Aplicacao-Exemplo-Project3.git
-  ```
+#### 2. Verificação do Python
+```bash
+python3 --version
+```
 
-![Imagem 02](../../assets/fase01/img02.png)
+> **Versão utilizada:** Python 3.10.12
 
-  ```
-  cd backend
-  ```
+![Versão Python](../../assets/fase01/img03.png)
 
-* Instale o Python (confirme a versão com):
+#### 3. Ambiente Virtual
+```bash
+# Criar ambiente virtual
+python3 -m venv venv
 
-  ```
-  python3 --version
-  ```
+# Ativar (Bash/Zsh)
+source venv/bin/activate
 
-> [!NOTE]
-> Para esse projeto utilizei a versão 3.10.12
+# Ativar (Fish Shell)
+source venv/bin/activate.fish
+```
 
-![Imagem 03](../../assets/fase01/img03.png)
+![Ambiente virtual](../../assets/fase01/img04.png)
 
-* Crie e ative o ambiente virtual:
+#### 4. Instalação de Dependências
+```bash
+pip install -r requirements.txt
+```
 
-  ```
-  python3 -m venv venv
-  source venv/bin/activate
-  ```
+![Instalação dependências](../../assets/fase01/img05.png)
 
-> [!IMPORTANT] 
-> Se usar shell fish, ative com:
+#### 5. Execução da Aplicação
+```bash
+python -m uvicorn main:app --reload
+```
 
-  ```
-  source venv/bin/activate.fish
-  ```
+![Execução backend](../../assets/fase01/img06.png)
 
-![Imagem 04](../../assets/fase01/img04.png)
+#### 6. Teste da API
+Acesse a documentação interativa em: http://localhost:8000/docs
 
-* Instale as dependências:
+![Documentação API](../../assets/fase01/img07.png)
 
-  ```
-  pip install -r requirements.txt
-  ```
+#### 7. Validação das Rotas
 
-![Imagem 05](../../assets/fase01/img05.png)
+Teste todas as rotas disponíveis através da interface Swagger:
 
-* Execute a aplicação com:
+![Teste rota 1](../../assets/fase01/img08.png)
+![Teste rota 2](../../assets/fase01/img10.png)
+![Teste rota 3](../../assets/fase01/img11.png)
 
-  ```
-  python -m uvicorn main:app --reload
-  ```
+✅ **Status esperado:** Todas as requisições devem retornar **200 OK**
 
-![Imagem 06](../../assets/fase01/img06.png)
+### Frontend (React)
 
-* Abra no navegador o endereço:
+#### 1. Navegação para o diretório
+```bash
+cd ../frontend/src
+```
 
-  ```
-  http://localhost:8000/docs
-  ```
+#### 2. Instalação de dependências
+```bash
+npm install
+```
 
-![Imagem 07](../../assets/fase01/img07.png)
+#### 3. Execução da aplicação
+```bash
+npm start
+```
 
-* Teste todas as rotas disponíveis (não feche o terminal enquanto testa).
+#### 4. Acesso à aplicação
+Abra o navegador em: http://localhost:3000
 
----
+## ✅ Entregáveis Concluídos
 
-6. Exemplo de teste de rotas e respostas:
+| Item | Status | Evidência |
+|------|--------|-----------|
+| Ambiente preparado | ✅ | Configuração Kubernetes e ferramentas |
+| Código rodando localmente | ✅ | Backend e Frontend funcionais |
+| Repositório GitHub criado | ✅ | [Link do repositório](https://github.com/andrrade/Aplicacao-Exemplo-Project3) |
 
-![Imagem 09](../../assets/fase01/img08.png)
-![Imagem 10](../../assets/fase01/img10.png)
-![Imagem 11](../../assets/fase01/img11.png)
+## 🔍 Próximos Passos
 
----
+Com o ambiente configurado, você está pronto para:
+- Fase 2: Containerização da aplicação
+- Configuração de CI/CD
+- Deploy no Kubernetes
 
-Se todas as requisições responderem com status **200 OK**, significa que o backend está rodando normalmente de forma local.
+## 📞 Suporte
 
----
-
-## Frontend
-
-Ter o nodeJS instalado, entrar na pasta frontend, e na pasta src, dar um npm install e dps um npm start
+Para dúvidas ou problemas:
+1. Verifique se todos os pré-requisitos estão instalados
+2. Confirme se as portas 8000 e 3000 estão disponíveis
+3. Valide se o ambiente virtual está ativo antes de instalar dependências
