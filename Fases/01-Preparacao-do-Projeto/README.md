@@ -37,13 +37,15 @@ kubectl get pods
 * Clone apenas a pasta `backend` do repositório:
 
   ```
-  git clone --depth 1 --filter=blob:none --sparse https://github.com/andrrade/Project3-CompassUOL-DevSecOps.git
-  cd Project3-CompassUOL-DevSecOps
-  git sparse-checkout set backend
-  cd backend
+  git clone https://github.com/andrrade/Aplicacao-Exemplo-Project3.git
   ```
 
 ![Imagem 02](../../assets/fase01/img02.png)
+
+  ```
+  cd backend
+  ```
+
 
 * Instale o Python (confirme a versão com):
 
