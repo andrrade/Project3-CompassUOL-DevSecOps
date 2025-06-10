@@ -137,6 +137,9 @@ npm start
 #### 4. Acesso à aplicação
 Abra o navegador em: http://localhost:3000
 
+>[!WARNING]
+> FALTA A IMAGEM
+
 ## ✅ Entregáveis Concluídos
 
 | Item | Status | Evidência |
@@ -145,16 +148,10 @@ Abra o navegador em: http://localhost:3000
 | Código rodando localmente | ✅ | Backend e Frontend funcionais |
 | Repositório GitHub criado | ✅ | [Link do repositório](https://github.com/andrrade/Aplicacao-Exemplo-Project3) |
 
-## 🔍 Próximos Passos
-
-Com o ambiente configurado, você está pronto para:
-- Fase 2: Containerização da aplicação
-- Configuração de CI/CD
-- Deploy no Kubernetes
-
-## 📞 Suporte
+## 📌 Importante
 
 Para dúvidas ou problemas:
 1. Verifique se todos os pré-requisitos estão instalados
 2. Confirme se as portas 8000 e 3000 estão disponíveis
 3. Valide se o ambiente virtual está ativo antes de instalar dependências
+4. Verifique se o rancher está funcionando corretamente
