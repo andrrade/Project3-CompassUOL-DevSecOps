@@ -32,6 +32,8 @@ kubectl get pods
 
 ---
 
+## Backend
+
 5. Valide a execução local com `uvicorn`:
 
 * Clone apenas a pasta `backend` do repositório:
@@ -45,7 +47,6 @@ kubectl get pods
   ```
   cd backend
   ```
-
 
 * Instale o Python (confirme a versão com):
 
@@ -111,3 +112,9 @@ kubectl get pods
 ---
 
 Se todas as requisições responderem com status **200 OK**, significa que o backend está rodando normalmente de forma local.
+
+---
+
+## Frontend
+
+Ter o nodeJS instalado, entrar na pasta frontend, e na pasta src, dar um npm install e dps um npm start
