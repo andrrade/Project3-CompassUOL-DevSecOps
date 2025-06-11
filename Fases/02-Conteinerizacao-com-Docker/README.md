@@ -33,7 +33,7 @@ docker-compose --version
 docker login
 ```
 
-[!Validacao do Ambiente](../../assets/fase02/img01.png)
+![img01](../../assets/fase02/img01.png)
 
 ## 🏗️ Estrutura do Projeto
 
@@ -185,7 +185,7 @@ Usando docker-compose (na pasta raiz):
 docker-compose build
 ```
 
-[!img02](../../assets/fase02/img02.png)
+![img02](../../assets/fase02/img02.png)
 
 Verificar imagens criadas:
 
@@ -193,7 +193,7 @@ Verificar imagens criadas:
 docker images
 ```
 
-[!img03](../../assets/fase02/img03.png)
+![img03](../../assets/fase02/img03.png)
 
 ### 7. Teste Local do Container
 
@@ -202,14 +202,14 @@ Executar usando docker-compose:
 docker-compose up -d
 ```
 
-[!img04](../../assets/fase02/img04.png)
+![img04](../../assets/fase02/img04.png)
 
 Verificar containers rodando:
 ```bash
 docker ps
 ```
 
-[!img05](../../assets/fase02/img05.png)
+![img05](../../assets/fase02/img05.png)
 
 Testar endpoints:
 ```bash
@@ -217,14 +217,15 @@ curl http://localhost:8000
 curl http://localhost:3000
 ```
 
-[!img06](../../assets/fase02/img06.png)
+![img06](../../assets/fase02/img06.png)
 
 **Acessando no navegador:**
 - Backend API: http://localhost:8000/docs
 - Frontend: http://localhost:3000
 
-[!img07](../../assets/fase02/img07.png)
-[!img08](../../assets/fase02/img08.png)
+![img07](../../assets/fase02/img07.png)
+
+![img08](../../assets/fase02/img08.png)
 
 Parar containers:
 ```bash
@@ -233,14 +234,15 @@ docker-compose down
 
 ### 8. Publicação no Docker Hub
 
-> **Nota:** Substitua `<username>` pelo seu nome de usuário no Docker Hub
+> [!IMPORTANT]
+> Substitua `<username>` pelo seu nome de usuário no Docker Hub
 
 ```bash
 # Login no Docker Hub
 docker login -u <username>
 ```
 
-[!img09](../../assets/fase02/img09.png)
+![img09](../../assets/fase02/img09.png)
 
 ```bash
 # Tag das imagens para o Docker Hub
@@ -252,11 +254,11 @@ docker push <username>/teste-local-docker-front:latest
 docker push <username>/teste-local-docker-backend:latest
 ```
 
-[!img10](../../assets/fase02/img10.png)
+![img10](../../assets/fase02/img10.png)
 
 Verificar publicação:
 
-[!img11](../../assets/fase02/img11.png)
+![img11](../../assets/fase02/img11.png)
 
 ### 9. Limpeza (Opcional)
 
@@ -270,36 +272,6 @@ docker rm docker-frontend docker-backend
 # Remover imagens locais
 docker rmi <username>/teste-local-docker-backend
 docker rmi <username>/teste-local-docker-front
-```
-
-## 🛠️ Solução de Problemas
-
-### Problemas Comuns
-
-**Erro de porta em uso:**
-```bash
-# Verificar processos usando as portas
-lsof -i :3000
-lsof -i :8000
-
-# Parar containers existentes
-docker-compose down
-```
-
-**Erro de build:**
-```bash
-# Limpar cache do Docker
-docker system prune -a
-
-# Rebuild sem cache
-docker-compose build --no-cache
-```
-
-**Permissões no Linux:**
-```bash
-# Adicionar usuário ao grupo docker
-sudo usermod -aG docker $USER
-# Reiniciar sessão após executar
 ```
 
 ## ✅ Entregáveis Concluídos
