@@ -137,6 +137,7 @@ kubectl get svc
 ```
 
 **Evidência de Deploy:**
+
 ![Status dos Pods e Services](../../assets/fase03/img01.png)
 
 ### 3. URLs de Acesso
@@ -149,17 +150,36 @@ kubectl get svc
 **Originalmente no Docker Compose:**
 - **Frontend**: http://localhost:3000
 - **Backend**: http://localhost:8000
+- **Documentação API**: http://localhost:8000/docs
 
 ## 📸 Evidências de Funcionamento
 
 ### Docker Compose (Referência)
+
+**Backend**
+
 ![Backend via Docker](../../assets/fase03/docker-back.png)
+
+**Documentação API**
+
 ![Documentação via Docker](../../assets/fase03/docker-docs.png)
+
+**Frontend**
+
 ![Frontend via Docker](../../assets/fase03/docker-front.png)
 
 ### Kubernetes (Deploy Final)
+
+**Backend**
+
 ![Backend via Kubernetes](../../assets/fase03/kubernetes-back.png)
+
+**Documentação API**
+
 ![Documentação via Kubernetes](../../assets/fase03/kubernetes-docs.png)
+
+**Frontend**
+
 ![Frontend via Kubernetes](../../assets/fase03/kubernetes-front.png)
 
 ## 🧪 Validação do Funcionamento
@@ -178,6 +198,7 @@ curl http://localhost:30000
 ```
 
 **Evidência dos Testes:**
+
 ![Testes de Conectividade](../../assets/fase03/img02.png)
 
 ### Checklist de Validação
@@ -191,13 +212,21 @@ curl http://localhost:30000
 
 ## 🧹 Limpeza dos Recursos
 
+### Kubernetes
+
 ```bash
 # Deletar todos os recursos criados
-kubectl delete -f k8s/deployment.yaml
+kubectl delete -f deployment.yaml
+```
 
-# Ou deletar individualmente por tipo
-kubectl delete deployment backend-app frontend-app
-kubectl delete service backend-service frontend-service
+### Docker
+
+```bash
+# Parar containers do Docker Compose
+docker-compose down
+
+# Remover imagens criadas
+docker rmi -f aplicacao-exemplo-project3-backend:latest backend-app:latest meu-backend:v1.0.0 meu-frontend:v1.0.0 aplicacao-exemplo-project3-frontend:latest frontend-app:latest
 ```
 
 ## ✅ Entregáveis Concluídos
