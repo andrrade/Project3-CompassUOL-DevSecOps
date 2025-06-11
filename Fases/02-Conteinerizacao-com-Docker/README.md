@@ -10,6 +10,10 @@ Nesta fase, a aplicação será empacotada em um container Docker, permitindo:
 - Versionamento de imagens
 - Distribuição através do Docker Hub
 
+> [!IMPORTANT]
+> fastapi-hello:latest 
+> Optei por fazer o push e pull com outro nome
+
 ## 🎯 Objetivos
 
 - [X] Criar Dockerfile para a aplicação

@@ -50,8 +50,8 @@ Para este projeto, utilizei o sistema operacional [Pop!\_OS](https://system76.co
 
 - [Fase 2](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/Fases/02-Conteinerizacao-com-Docker/README.md)  
   - [X] Criar o Dockerfile  
-  - [X] Fazer build: `docker build -t usuario/fastapi-hello:latest`  
-  - [X] Fazer push: `docker push usuario/fastapi-hello:latest`  
+  - [X] Fazer build
+  - [X] Fazer push
   - [X] Versionar o Dockerfile junto com o código da aplicação no GitHub  
 
 - [Fase 3](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/Fases/03-Arquivos-de-Deploy-no-Kubernetes/README.md)  
