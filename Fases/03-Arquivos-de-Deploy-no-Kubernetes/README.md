@@ -54,7 +54,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend-app
-  namespace: default
 spec:
   replicas: 2
   selector:
@@ -67,24 +66,22 @@ spec:
     spec:
       containers:
       - name: frontend-app
-        image: meu-frontend:v1.0.0
+        image: andrrade/meu-frontend:{{FRONTEND_TAG}}
         ports:
         - containerPort: 3000
-        imagePullPolicy: IfNotPresent
 ---
-# Frontend Service (exposto em localhost:30000)
+# Frontend Service
 apiVersion: v1
 kind: Service
 metadata:
   name: frontend-service
-  namespace: default
 spec:
   selector:
     app: frontend-app
   ports:
   - port: 80
     targetPort: 3000
-    nodePort: 30000  
+    nodePort: 30000
   type: NodePort
 ---
 # Backend Deployment
@@ -92,7 +89,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend-app
-  namespace: default
 spec:
   replicas: 2
   selector:
@@ -105,17 +101,15 @@ spec:
     spec:
       containers:
       - name: backend-app
-        image: meu-backend:v1.0.0
+        image: andrrade/meu-backend:{{BACKEND_TAG}}
         ports:
         - containerPort: 8000
-        imagePullPolicy: IfNotPresent
 ---
-# Backend Service (exposto em localhost:30001)
+# Backend Service
 apiVersion: v1
 kind: Service
 metadata:
   name: backend-service
-  namespace: default
 spec:
   selector:
     app: backend-app

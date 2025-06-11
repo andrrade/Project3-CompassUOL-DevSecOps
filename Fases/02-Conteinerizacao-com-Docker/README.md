@@ -77,32 +77,11 @@ EXPOSE 8000
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 ```
 
-### 2. Criação do .dockerignore para Backend
-
-**Localização:** Dentro da pasta `backend` crie um `.dockerignore`
-
-```dockerignore
-venv/
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-__pycache__
-.git
-.gitignore
-README.md
-.env
-.venv
-.pytest_cache
-.coverage
-```
-
-### 3. Criação do Dockerfile no Frontend
+### 2. Criação do Dockerfile no Frontend
 
 **Localização:** Dentro da pasta `frontend` crie um `Dockerfile`
 
 ```dockerfile
-# Dockerfile Frontend (salvar como Dockerfile na pasta frontend)
 FROM node:18-alpine as build
 WORKDIR /app
 COPY package.json package-lock.json ./
@@ -114,7 +93,6 @@ FROM nginx:alpine
 COPY --from=build /app/build /usr/share/nginx/html
 EXPOSE 3000
 
-# Configuração customizada do nginx para porta 3000
 RUN echo 'server { \
     listen 3000; \
     server_name localhost; \
@@ -285,4 +263,5 @@ docker rmi <username>/teste-local-docker-front
 | Criar Dockerfile para a aplicação | ✅ | `backend/Dockerfile`, `frontend/Dockerfile` e `dockercompose.yaml` criados |
 | Realizar build da imagem Docker | ✅ | Imagens `docker-backend` e `docker-frontend` buildadas |
 | Publicar imagem no Docker Hub | ✅ | Imagens `teste-local-docker-backend` e `teste-local-docker-frontend` publicadas |
+| Imagem publicada no Dockerhub | ✅ | ![img](../../assets/fase02/img11.png) |
 | Versionar Dockerfile no repositório GitHub | ✅ | Arquivos Docker commitados no [repositório](https://github.com/andrrade/Aplicacao-Exemplo-Project3) |
