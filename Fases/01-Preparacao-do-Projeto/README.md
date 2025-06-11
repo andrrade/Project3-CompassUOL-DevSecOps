@@ -137,8 +137,7 @@ npm start
 #### 4. Acesso à aplicação
 Abra o navegador em: http://localhost:3000
 
->[!WARNING]
-> FALTA A IMAGEM
+![Teste rota 3](../../assets/fase02/img08.png)
 
 ## ✅ Entregáveis Concluídos
 
