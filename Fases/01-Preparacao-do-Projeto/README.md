@@ -137,7 +137,7 @@ npm start
 #### 4. Acesso à aplicação
 Abra o navegador em: http://localhost:3000
 
-![Teste rota 3](../../assets/fase02/img08.png)
+![Teste rota 3](../../assets/fase01/img12.png)
 
 ## ✅ Entregáveis Concluídos
 
