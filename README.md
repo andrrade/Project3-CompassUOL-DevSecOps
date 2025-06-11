@@ -58,15 +58,13 @@ Para este projeto, utilizei o sistema operacional [Pop!\_OS](https://system76.co
   - [X] Criar o YAML de deployment da aplicação e aplicá-lo no cluster  
   - [X] Criar o YAML de service do deployment e aplicá-lo no cluster  
 
-- [Fase 4](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/Fases/04-Jenkins-Build-Push/README.md)  
-  - [ ] Criar a pipeline no Jenkins  
-  - [ ] Realizar o stage de build  
-  - [ ] Realizar o stage de push  
-
-- [Fase 5](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/Fases/05-Jenkins-Deploy-no-Kubernetes/README.md)  
-  - [ ] Jenkins precisa acessar o `kubectl` (usar agent com `kubectl` e `kubeconfig` configurados)  
-  - [ ] Adicionar etapa de deploy no `Jenkinsfile`  
-  - [ ] Testar a pipeline completa  
+- [Fase 4 e 5](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/tree/main/Fases/04-05-Jenkins-Deploy-no-Kubernetes)  
+  - [X] Criar a pipeline no Jenkins  
+  - [X] Realizar o stage de build  
+  - [X] Realizar o stage de push  
+  - [X] Jenkins precisa acessar o `kubectl` (usar agent com `kubectl` e `kubeconfig` configurados)  
+  - [X] Adicionar etapa de deploy no `Jenkinsfile`  
+  - [X] Testar a pipeline completa 
 
 - [Fase 6](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/tree/main/Fases/06-Documentacao)  
   - [ ] Criar `README.md`  
