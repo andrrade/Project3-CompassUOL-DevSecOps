@@ -43,20 +43,20 @@ Para este projeto, utilizei o sistema operacional [Pop!\_OS](https://system76.co
 - [Enunciado](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/PB-Projeto-DevOps.pdf)
 
 - [Fase 1](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/Fases/01-Preparacao-do-Projeto/README.md)  
-  - [x] Criar um repositório de código no Github para inserir a aplicação de exemplo  
-  - [x] Criar conta no Docker Hub  
-  - [x] Verificar acesso ao cluster Kubernetes local  
-  - [x] Validar execução local com uvicorn  
+  - [X] Criar um repositório de código no Github para inserir a aplicação de exemplo  
+  - [X] Criar conta no Docker Hub  
+  - [X] Verificar acesso ao cluster Kubernetes local  
+  - [X] Validar execução local com uvicorn  
 
 - [Fase 2](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/Fases/02-Conteinerizacao-com-Docker/README.md)  
-  - [x] Criar o Dockerfile  
-  - [x] Fazer build: `docker build -t usuario/fastapi-hello:latest`  
-  - [x] Fazer push: `docker push usuario/fastapi-hello:latest`  
-  - [x] Versionar o Dockerfile junto com o código da aplicação no GitHub  
+  - [X] Criar o Dockerfile  
+  - [X] Fazer build: `docker build -t usuario/fastapi-hello:latest`  
+  - [X] Fazer push: `docker push usuario/fastapi-hello:latest`  
+  - [X] Versionar o Dockerfile junto com o código da aplicação no GitHub  
 
 - [Fase 3](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/Fases/03-Arquivos-de-Deploy-no-Kubernetes/README.md)  
-  - [ ] Criar o YAML de deployment da aplicação e aplicá-lo no cluster  
-  - [ ] Criar o YAML de service do deployment e aplicá-lo no cluster  
+  - [X] Criar o YAML de deployment da aplicação e aplicá-lo no cluster  
+  - [X] Criar o YAML de service do deployment e aplicá-lo no cluster  
 
 - [Fase 4](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/Fases/04-Jenkins-Build-Push/README.md)  
   - [ ] Criar a pipeline no Jenkins  
