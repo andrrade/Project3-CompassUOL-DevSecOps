@@ -110,9 +110,11 @@ https://github.com/user-attachments/assets/0d8271f3-5b65-4c15-a100-2847690ba9d1
 Obrigada pela atenção!
 
 <p align="center">
+  <br>
+  <img src="./assets/chuck_norris.png" alt="chuch-norris">
+</p>
 
-![chuch-norris](./assets/chuck_norris.png)
-
+<p align="center">
   <br>
   <img src="./assets/logos/compassUol.png" alt="CompassUOL Logo" width="250">
 </p>
