@@ -84,11 +84,15 @@ Para este projeto, utilizei o sistema operacional [Pop!\_OS](https://system76.co
   - [ ] Subir o **SonarQube** em ambiente Docker, conectá-lo ao Jenkins e enviar o código para análise **SAST**  
   - [ ] Utilizar **Helm Chart** para implantar a aplicação no Kubernetes  
 
+---
+
+## Apresentação Final
+
+Mostrando projeto completo com todas as fases funcionando + extras (webhook github, webhook discord, trivy e frontend estilizado):
+
+> Add vídeo completo
+
 <p align="center">
   <br>
   <img src="./assets/logos/compassUol.png" alt="CompassUOL Logo" width="250">
 </p>
-
----
-
-Mostrando projeto completo com todas as fases funcionando + extras (webhook github, webhook discord, trivy e frontend estilizado):
