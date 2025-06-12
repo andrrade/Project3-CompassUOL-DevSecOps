@@ -75,9 +75,12 @@ Para este projeto, utilizei o sistema operacional [Pop!\_OS](https://system76.co
 
 - [Extras](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/tree/main/Fases/07-Desafios-Extras)  
 
-  - [ ] [Clique aqui](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/Fases/07-Desafios-Extras/fase06-extra-trivy/README.md). Criar uma etapa após o push da imagem de container, realizar o scanner de vulnerabilidades com o **Trivy**. 
-  - [ ] [Clique aqui](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/Fases/07-Desafios-Extras/fase07-extra-webhook-github/README.md). Criar um webhook com o **GitHub** 
-  - [ ] [Clique aqui](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/Fases/07-Desafios-Extras/fase08-extra-webhook-discord/README.md). Criar um webhook com o **Slack** ou **Discord** para avisar quando a pipeline for atualizada no ambiente Kubernetes. 
+  - [ ] Criar uma etapa após o push da imagem de container, realizar o scanner de vulnerabilidades com o **Trivy**. 
+  [Clique aqui](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/Fases/07-Desafios-Extras/fase06-extra-trivy/README.md).
+  - [ ] Criar um webhook com o **GitHub** 
+  [Clique aqui](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/Fases/07-Desafios-Extras/fase07-extra-webhook-github/README.md)
+  - [ ] Criar um webhook com o **Slack** ou **Discord** para avisar quando a pipeline for atualizada no ambiente Kubernetes. 
+  [Clique aqui](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/Fases/07-Desafios-Extras/fase08-extra-webhook-discord/README.md)
   - [ ] Subir o **SonarQube** em ambiente Docker, conectá-lo ao Jenkins e enviar o código para análise **SAST**  
   - [ ] Utilizar **Helm Chart** para implantar a aplicação no Kubernetes  
 
