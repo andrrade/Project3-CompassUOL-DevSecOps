@@ -357,3 +357,9 @@ pipeline {
 - Substitua `DOCKERHUB_REPO` pelo seu usuário do DockerHub
 - Ajuste o `serverUrl` do Kubernetes conforme seu ambiente
 - Os serviços ficam disponíveis nas portas 30000 (frontend) e 30001 (backend)
+
+---
+
+## Demonstração:
+
+![video1](../../assets/fase04-05/video-demonstracao01.mp4)
