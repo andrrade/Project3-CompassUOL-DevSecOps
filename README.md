@@ -6,6 +6,17 @@
 # Deploy automatizado de API com FastAPI, Jenkins e Kubernetes
 
 <div align="center">
+  <img src="https://techstack-generator.vercel.app/kubernetes-icon.svg" alt="kubernetes icon" width="60" height="60" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="jenkins logo" height="50" />
+  <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="docker icon" width="60" height="60" />
+  <img src="https://raw.githubusercontent.com/gilbarbara/logos/main/logos/fastapi.svg" alt="fastapi logo" width="55" height="55" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="nodejs logo" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="react logo" width="40" height="40">
+</div>
+
+<br>
+
+<div align="center">
   <a href="https://kubernetes.io/" target="_blank">
     <img src="https://img.shields.io/badge/Kubernetes-326ce5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes" title="Kubernetes"/></a>
   <a href="https://www.jenkins.io/" target="_blank">
