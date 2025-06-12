@@ -99,6 +99,6 @@ Para colocar o webhook no discord, instale no jenkins o plugin Discord Notifier
 
 3. Clique em `Salvar alterações`
 
-![image](../../../assets/fase08-extra-webhook-discord/p13.png)
+![teste](../../../assets/fase08-extra-webhook-discord/p13.png)
 
 ---
