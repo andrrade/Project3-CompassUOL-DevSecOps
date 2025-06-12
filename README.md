@@ -66,10 +66,15 @@ Para este projeto, utilizei o sistema operacional [Pop!\_OS](https://system76.co
   - [X] Adicionar etapa de deploy no `Jenkinsfile`  
   - [X] Testar a pipeline completa 
 
-- [Fase 6](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/tree/main/Fases/06-Documentacao)  
-  - [ ] Criar `README.md`  
+- Fase 6
+  - [ ] Criar `README.md`
+    - [ ] Passos para reproduzir o projeto.
+    - [ ] Tecnologias usadas.
+    - [ ] Print do Jenkins.
+    - [ ] Apresentar pipeline funcionando: build, push e deploy.  
 
 - [Extras](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/tree/main/Fases/07-Desafios-Extras)  
+
   - [ ] Criar uma etapa após o push da imagem de container, realizar o scanner de vulnerabilidades com o **Trivy**  
   - [ ] Criar um webhook com o **Slack** ou **Discord** para avisar quando a pipeline for atualizada no ambiente Kubernetes  
   - [ ] Subir o **SonarQube** em ambiente Docker, conectá-lo ao Jenkins e enviar o código para análise **SAST**  
