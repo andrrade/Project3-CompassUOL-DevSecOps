@@ -79,3 +79,7 @@ Para este projeto, utilizei o sistema operacional [Pop!\_OS](https://system76.co
   <br>
   <img src="./assets/logos/compassUol.png" alt="CompassUOL Logo" width="250">
 </p>
+
+---
+
+Mostrando projeto completo com todas as fases funcionando + extras (webhook github, webhook discord, trivy e frontend estilizado):
