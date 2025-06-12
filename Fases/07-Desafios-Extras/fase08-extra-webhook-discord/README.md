@@ -104,3 +104,5 @@ webhook_url = "<coloque a URL do seu webhook do Discord aqui>"
 3. Clique em `Salvar alterações`
 
 ![image](../../../assets/fase08-extra-webhook-discord/p13.png)
+
+---
