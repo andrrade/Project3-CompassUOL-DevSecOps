@@ -101,9 +101,18 @@ Para este projeto, utilizei o sistema operacional [Pop!\_OS](https://system76.co
 
 Mostrando projeto completo com todas as fases funcionando + extras (webhook github, webhook discord, trivy e frontend estilizado):
 
-> Add vídeo completo
+![vídeo completo](./assets/video-final.mp4)
+
+https://github.com/user-attachments/assets/0d8271f3-5b65-4c15-a100-2847690ba9d1
+
+---
+
+Obrigada pela atenção!
+
+![chuch-norris](./assets/chuck_norris.png)
 
 <p align="center">
   <br>
   <img src="./assets/logos/compassUol.png" alt="CompassUOL Logo" width="250">
 </p>
+
