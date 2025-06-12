@@ -95,11 +95,7 @@ Para colocar o webhook no discord, instale no jenkins o plugin Discord Notifier
 2. Copie a `URL`
 
 > [!IMPORTANT]
-> Essa é a URL que deve ser alterada na linha 6 do arquivo [events.py](https://github.com/andrrade/Projetos-Docker/blob/main/projeto-01/events.py):
-
-```py
-webhook_url = "<coloque a URL do seu webhook do Discord aqui>"
-```
+> Essa é a URL que você irá colocar no seu jenkinsfile
 
 3. Clique em `Salvar alterações`
 
