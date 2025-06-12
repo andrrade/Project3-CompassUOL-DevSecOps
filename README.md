@@ -103,7 +103,7 @@ Mostrando projeto completo com todas as fases funcionando + extras (webhook gith
 
 ![vídeo completo](./assets/video-final.mp4)
 
-https://github.com/user-attachments/assets/0d8271f3-5b65-4c15-a100-2847690ba9d1
+https://github.com/user-attachments/assets/d4800163-a698-40f9-bc85-fbec00967c58
 
 ---
 
