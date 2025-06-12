@@ -78,17 +78,17 @@ Para este projeto, utilizei o sistema operacional [Pop!\_OS](https://system76.co
   - [X] Testar a pipeline completa 
 
 - Fase 6
-  - [ ] Criar `README.md`
-    - [ ] Passos para reproduzir o projeto.
-    - [ ] Tecnologias usadas.
-    - [ ] Print do Jenkins.
-    - [ ] Apresentar pipeline funcionando: build, push e deploy.  
+  - [X] Criar `README.md`
+    - [X] Passos para reproduzir o projeto.
+    - [X] Tecnologias usadas.
+    - [X] Print do Jenkins.
+    - [X] Apresentar pipeline funcionando: build, push e deploy.  
 
 - [Extras](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/tree/main/Fases/07-Desafios-Extras)  
 
-  - [ ] Criar uma etapa após o push da imagem de container, realizar o scanner de vulnerabilidades com o **Trivy**. 
+  - [X] Criar uma etapa após o push da imagem de container, realizar o scanner de vulnerabilidades com o **Trivy**. 
   - [Clique aqui](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/Fases/07-Desafios-Extras/fase06-extra-trivy/README.md).
-  - [ ] Criar um webhook com o **GitHub** 
+  - [X] Criar um webhook com o **GitHub** 
   - [Clique aqui](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/Fases/07-Desafios-Extras/fase07-extra-webhook-github/README.md)
   - [ ] Criar um webhook com o **Slack** ou **Discord** para avisar quando a pipeline for atualizada no ambiente Kubernetes. 
   - [Clique aqui](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/Fases/07-Desafios-Extras/fase08-extra-webhook-discord/README.md)
