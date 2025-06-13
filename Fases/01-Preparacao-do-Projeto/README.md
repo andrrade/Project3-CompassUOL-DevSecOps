@@ -143,7 +143,7 @@ Abra o navegador em: http://localhost:3000
 ![Teste rota 3](../../assets/fase01/img12.png)
 
 > [!IMPORTANT]
-> Esse frontend mostrado na imagem, era o frontend para testes, após concluir o projeto, deixei ele melhor estilizado, como pode ser visto nessas imagem:
+> O frontend mostrado na imagem era uma versão de testes. Após concluir o projeto, deixei-o mais estilizado, como pode ser visto nas imagens a seguir:
 
 <div align="center">
   <h3>Frontend Responsivo:</h3>
