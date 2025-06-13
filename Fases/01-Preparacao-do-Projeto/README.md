@@ -149,12 +149,10 @@ Abra o navegador em: http://localhost:3000
 
 ![Frontend-Final](../../assets/frontend-final.png)
 
-### Frontend Responsivo:
-
-<p align="center">
-  <br>
+<div align="center">
+  <h3>Frontend Responsivo:</h3>
   <img src="../../assets/frontend-responsivo.png" alt="Frontend-Final" width="200">
-</p>
+</div>
 
 ---
 
