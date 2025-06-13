@@ -103,10 +103,10 @@ Para este projeto, utilizei o sistema operacional [Pop!\_OS](https://system76.co
 
 - Fase 8
   - [X] [Considerações Finais](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/tree/main/Fases/08-Consideracoes-Finais)
-  
+
 ---
 
-## Apresentação Final
+## 🎯 Apresentação Final
 
 Mostrando projeto completo com todas as fases funcionando + extras (webhook github, webhook discord, trivy e frontend estilizado):
 
