@@ -1,8 +1,8 @@
-Para colocar o webhook no discord, instale no jenkins o plugin Discord Notifier
+Para colocar o webhook no discord, instale no jenkins o plugin `Discord Notifier`
 
 ![img01](../../../assets/fase08-extra-webhook-discord/img01.png)
 
-Instale também o plugin `HTTP Request` no Jenkins
+Instale também o plugin `HTML Publisher plugin` no Jenkins
 
 ## Criar o Webhook no Discord
 
