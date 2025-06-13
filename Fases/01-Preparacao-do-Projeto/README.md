@@ -151,7 +151,7 @@ Abra o navegador em: http://localhost:3000
 
 ### Frontend Responsivo:
 
-![Frontend-Final](../../assets/frontend-responsivo.png)
+<img src="../../assets/frontend-responsivo.png" alt="Frontend-Final" width="200">
 
 ---
 
