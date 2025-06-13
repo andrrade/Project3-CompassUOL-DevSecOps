@@ -11,8 +11,7 @@ Nesta fase, a aplicação será empacotada em um container Docker, permitindo:
 - Distribuição através do Docker Hub
 
 > [!IMPORTANT]
-> fastapi-hello:latest 
-> Optei por fazer o push e pull com outro nome
+> Embora tenha sido recomendado usar o nome `fastapi-hello:latest`,  optei por fazer o push e pull com outro nome.
 
 ## 🎯 Objetivos
 
@@ -39,7 +38,7 @@ docker login
 
 ![img01](../../assets/fase02/img01.png)
 
-## 🏗️ Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 ```
 projeto/
@@ -93,6 +92,7 @@ FROM nginx:alpine
 COPY --from=build /app/build /usr/share/nginx/html
 EXPOSE 3000
 
+# Configuração customizada do nginx para porta 3000
 RUN echo 'server { \
     listen 3000; \
     server_name localhost; \
@@ -106,29 +106,7 @@ RUN echo 'server { \
 CMD ["nginx", "-g", "daemon off;"]
 ```
 
-### 4. Criação do .dockerignore para Frontend
-
-**Localização:** Dentro da pasta `frontend` crie um `.dockerignore`
-
-```dockerignore
-node_modules
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.git
-.gitignore
-README.md
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-build
-.DS_Store
-coverage
-```
-
-### 5. Criação do Docker Compose
+### 3. Criação do Docker Compose
 
 **Localização:** Na pasta raiz do projeto (anterior ao backend e frontend), crie o `docker-compose.yml`
 
@@ -159,7 +137,7 @@ networks:
     driver: bridge
 ```
 
-### 6. Build da Imagem
+### 4. Build da Imagem
 
 Usando docker-compose (na pasta raiz):
 
@@ -177,7 +155,7 @@ docker images
 
 ![img03](../../assets/fase02/img03.png)
 
-### 7. Teste Local do Container
+### 5. Teste Local do Container
 
 Executar usando docker-compose:
 ```bash
@@ -214,7 +192,7 @@ Parar containers:
 docker-compose down
 ```
 
-### 8. Publicação no Docker Hub
+### 6. Publicação no Docker Hub
 
 > [!IMPORTANT]
 > Substitua `<username>` pelo seu nome de usuário no Docker Hub
@@ -242,7 +220,7 @@ Verificar publicação:
 
 ![img11](../../assets/fase02/img11.png)
 
-### 9. Limpeza (Opcional)
+### 7. Limpeza (Opcional)
 
 Para remover containers e imagens locais após o push:
 
