@@ -280,3 +280,23 @@ EOF
     }
 }
 ```
+
+Provas de que está funcionando:
+
+![img01](../../../assets/fase06-extra-trivy/img01.png)
+
+![img02](../../../assets/fase06-extra-trivy/img02.png)
+
+![img03](../../../assets/fase06-extra-trivy/img03.png)
+
+![img04](../../../assets/fase06-extra-trivy/img04.png)
+
+![img05](../../../assets/fase06-extra-trivy/img05.png)
+
+![img06](../../../assets/fase06-extra-trivy/img06.png)
+
+![img07](../../../assets/fase06-extra-trivy/img07.png)
+
+![img08](../../../assets/fase06-extra-trivy/img08.png)
+
+![img09](../../../assets/fase06-extra-trivy/img09.png)
