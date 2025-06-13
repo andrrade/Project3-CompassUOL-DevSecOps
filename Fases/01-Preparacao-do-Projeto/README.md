@@ -112,7 +112,9 @@ Acesse a documentação interativa em: http://localhost:8000/docs
 Teste todas as rotas disponíveis através da interface Swagger:
 
 ![Teste rota 1](../../assets/fase01/img08.png)
+
 ![Teste rota 2](../../assets/fase01/img10.png)
+
 ![Teste rota 3](../../assets/fase01/img11.png)
 
 ✅ **Status esperado:** Todas as requisições devem retornar **200 OK**
@@ -135,9 +137,15 @@ npm start
 ```
 
 #### 4. Acesso à aplicação
+
 Abra o navegador em: http://localhost:3000
 
 ![Teste rota 3](../../assets/fase01/img12.png)
+
+> [!IMPORTANT]
+> Esse frontend mostrado na imagem, era o frontend para testes, após concluir o projeto, deixei ele melhor estilizado, como pode ser visto nessa imagem:
+
+![Frontend-Final]()
 
 ## ✅ Entregáveis Concluídos
 
