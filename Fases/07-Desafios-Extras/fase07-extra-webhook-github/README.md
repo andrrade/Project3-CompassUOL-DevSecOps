@@ -14,8 +14,7 @@ ngrok http http://192.168.121.152:8080/
 
 ![img03](../../../assets/fase07-extra-webhook-github/img03.png)
 
-4. Clique em webhooks.
-
+4. Clique em webhooks
 
 ![img04](../../../assets/fase07-extra-webhook-github/img04.png)
 
@@ -23,7 +22,7 @@ ngrok http http://192.168.121.152:8080/
 
 ![img05](../../../assets/fase07-extra-webhook-github/img05.png)
 
-6. Selecione application/json
+6. Cole o link gerado pelo ngrok e adicione `/github-webhook/`. Depois, selecione application/json
 
 ![img06](../../../assets/fase07-extra-webhook-github/img06.png)
 
