@@ -147,11 +147,14 @@ Abra o navegador em: http://localhost:3000
 
 ### Frontend para PC:
 
-![Frontend-Final](../../assets/frontend-final.png)
+<div align="center">
+  <h3>Frontend Responsivo:</h3>
+  <img src="../../assets/frontend-final.png" alt="Frontend PC">
+</div>
 
 <div align="center">
   <h3>Frontend Responsivo:</h3>
-  <img src="../../assets/frontend-responsivo.png" alt="Frontend-Final" width="200">
+  <img src="../../assets/frontend-responsivo.png" alt="Frontend Responsivo" width="200">
 </div>
 
 ---
