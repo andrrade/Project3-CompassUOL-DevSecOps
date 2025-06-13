@@ -14,11 +14,12 @@ ngrok http http://192.168.121.152:8080/
 
 ![img03](../../../assets/fase07-extra-webhook-github/img03.png)
 
-4. Clique em webhooks e Add webhook
+4. Clique em webhooks.
+
 
 ![img04](../../../assets/fase07-extra-webhook-github/img04.png)
 
-5. Cole o link gerado pelo ngrok e adicione `/github-webhook/` no final
+5. Clique em Add webhook
 
 ![img05](../../../assets/fase07-extra-webhook-github/img05.png)
 
