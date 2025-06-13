@@ -35,7 +35,13 @@
 
 ---
 
-[Repo Aplicacao](https://github.com/andrrade/Aplicacao-Exemplo-Project3)
+# 📁 Repo da Aplicação
+
+Os arquivos da aplicação utilizados neste projeto estão disponíveis aqui:
+<br>
+🔗 **[Repo Aplicação – Aplicacao-Exemplo-Project3](https://github.com/andrrade/Aplicacao-Exemplo-Project3)**
+
+---
 
 ## 💻 Tecnologias Utilizadas
 
@@ -105,17 +111,17 @@ Mostrando projeto completo com todas as fases funcionando + extras (webhook gith
 
 https://github.com/user-attachments/assets/d4800163-a698-40f9-bc85-fbec00967c58
 
+<p align="center">
+  <br>
+  <img src="./assets/logos/compassUol.png" alt="CompassUOL Logo" width="250">
+</p>
+
 ---
 
-Obrigada pela atenção!
+## 🧡 Obrigada pela atenção!
 
 <p align="center">
   <br>
   <img src="./assets/chuck_norris.png" alt="chuch-norris">
-</p>
-
-<p align="center">
-  <br>
-  <img src="./assets/logos/compassUol.png" alt="CompassUOL Logo" width="250">
 </p>
 
