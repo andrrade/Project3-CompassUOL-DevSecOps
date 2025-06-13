@@ -71,6 +71,7 @@ pipeline {
     environment {
         DOCKERHUB_REPO = "andrrade"
         BUILD_TAG = "${env.BUILD_ID}"
+        DISCORD_WEBHOOK = "https://discordapp.com/api/webhooks/1382761573411721216/7M3tXv4XD7_H3xEjYUJndbOm9sGWkPABuLSvXssREJmWckZ6tYSqn9LYrUN0eFjKEgDX"
     }
 
     stages {
@@ -123,18 +124,21 @@ pipeline {
                 stage('Scan Frontend') {
                     steps {
                         script {
+                            // Instala o Trivy se não existir
                             sh '''
                                 if ! command -v trivy &> /dev/null; then
                                     curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b .
                                 fi
                             '''
-                            
+                            // Usa ./trivy caso trivy global não exista
                             def trivyCmd = sh(script: 'command -v trivy', returnStatus: true) == 0 ? 'trivy' : './trivy'
-                            
+
+                            // Executa scan sem falhar o build mesmo com vulnerabilidades
                             sh """
                                 ${trivyCmd} image --format table --exit-code 0 ${DOCKERHUB_REPO}/meu-frontend:${BUILD_TAG}
                             """
-                            
+
+                            // Gera relatório JSON para análise de severidades
                             sh """
                                 ${trivyCmd} image --format json --quiet ${DOCKERHUB_REPO}/meu-frontend:${BUILD_TAG} > frontend-scan.json
                                 
@@ -161,8 +165,8 @@ try:
     
     total = critical + high + medium + low + unknown
     print(f"Frontend - Total: {total} (UNKNOWN: {unknown}, LOW: {low}, MEDIUM: {medium}, HIGH: {high}, CRITICAL: {critical})")
-except:
-    print("Frontend - Scan error")
+except Exception as e:
+    print(f"Frontend - Scan error: {e}")
 EOF
                             """
                         }
@@ -177,7 +181,6 @@ EOF
                                     curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b .
                                 fi
                             '''
-                            
                             def trivyCmd = sh(script: 'command -v trivy', returnStatus: true) == 0 ? 'trivy' : './trivy'
                             
                             sh """
@@ -210,8 +213,8 @@ try:
     
     total = critical + high + medium + low + unknown
     print(f"Backend - Total: {total} (UNKNOWN: {unknown}, LOW: {low}, MEDIUM: {medium}, HIGH: {high}, CRITICAL: {critical})")
-except:
-    print("Backend - Scan error")
+except Exception as e:
+    print(f"Backend - Scan error: {e}")
 EOF
                             """
                         }
@@ -273,9 +276,84 @@ EOF
             echo '🚀 Deploy realizado com sucesso!'
             echo "✅ Frontend: ${DOCKERHUB_REPO}/meu-frontend:${BUILD_TAG}"
             echo "✅ Backend: ${DOCKERHUB_REPO}/meu-backend:${BUILD_TAG}"
+            
+            discordSend(
+                description: """
+**✅ Deploy Realizado com Sucesso!**
+🚀 **Job:** ${JOB_NAME}
+🔢 **Build:** #${BUILD_NUMBER}
+⏱️ **Duração:** ${currentBuild.durationString}
+
+**🌐 Aplicação Disponível:**
+🎨 **Frontend:** http://localhost:30000
+🔧 **Backend:** http://localhost:30001
+📚 **Docs:** http://localhost:30001/docs
+
+**🐳 Imagens Docker:**
+• Frontend: `${DOCKERHUB_REPO}/meu-frontend:${BUILD_TAG}`
+• Backend: `${DOCKERHUB_REPO}/meu-backend:${BUILD_TAG}`
+
+🔗 **Logs:** ${BUILD_URL}
+""",
+                footer: "Jenkins CI/CD Pipeline",
+                link: env.BUILD_URL,
+                result: "SUCCESS",
+                title: "✅ Pipeline Executada com Sucesso",
+                webhookURL: env.DISCORD_WEBHOOK
+            )
         }
         failure {
             echo '❌ Build falhou!'
+            
+            discordSend(
+                description: """
+**❌ Build Falhou!**
+🚀 **Job:** ${JOB_NAME}
+🔢 **Build:** #${BUILD_NUMBER}
+⏱️ **Duração:** ${currentBuild.durationString}
+🔍 **Verificar logs:** ${BUILD_URL}console
+""",
+                footer: "Jenkins CI/CD Pipeline",
+                link: env.BUILD_URL,
+                result: "FAILURE",
+                title: "❌ Pipeline Falhou",
+                webhookURL: env.DISCORD_WEBHOOK
+            )
+        }
+        unstable {
+            echo '⚠️ Build instável!'
+            
+            discordSend(
+                description: """
+**⚠️ Build Instável!**
+🚀 **Job:** ${JOB_NAME}
+🔢 **Build:** #${BUILD_NUMBER}
+⏱️ **Duração:** ${currentBuild.durationString}
+🔍 **Verificar logs:** ${BUILD_URL}console
+""",
+                footer: "Jenkins CI/CD Pipeline",
+                link: env.BUILD_URL,
+                result: "UNSTABLE",
+                title: "⚠️ Pipeline Instável",
+                webhookURL: env.DISCORD_WEBHOOK
+            )
+        }
+        aborted {
+            echo '🛑 Build cancelado!'
+            
+            discordSend(
+                description: """
+**🛑 Build Cancelado!**
+🚀 **Job:** ${JOB_NAME}
+🔢 **Build:** #${BUILD_NUMBER}
+⏱️ **Duração:** ${currentBuild.durationString}
+""",
+                footer: "Jenkins CI/CD Pipeline",
+                link: env.BUILD_URL,
+                result: "ABORTED",
+                title: "🛑 Pipeline Cancelada",
+                webhookURL: env.DISCORD_WEBHOOK
+            )
         }
     }
 }
