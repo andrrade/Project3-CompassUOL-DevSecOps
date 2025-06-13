@@ -1,4 +1,68 @@
-jenkins file com o trivy adicionado:
+# Pipeline CI/CD com Scanner de Segurança Trivy
+
+## 📋 Visão Geral
+
+Esta pipeline Jenkins implementa um processo completo de CI/CD com scanner de vulnerabilidades para aplicações containerizadas. O projeto inclui build de imagens Docker para frontend e backend, push para DockerHub, análise de segurança com Trivy e deploy automatizado no Kubernetes.
+
+## 🏗️ Arquitetura da Pipeline
+
+### Estágios da Pipeline
+
+1. **Build Images** - Construção paralela das imagens Docker
+2. **Push Images** - Upload das imagens para o DockerHub
+3. **Security Scan** - Análise de vulnerabilidades com Trivy ⚡
+4. **Deploy** - Deploy no cluster Kubernetes
+5. **Verify** - Verificação do status do deployment
+
+## 🔒 Scanner de Segurança com Trivy
+
+### Funcionalidades Implementadas
+
+- **Instalação Automática**: O Trivy é instalado automaticamente se não estiver presente no sistema
+- **Scan Paralelo**: Análise simultânea das imagens frontend e backend
+- **Relatórios Detalhados**: Geração de relatórios em formato JSON e tabela
+- **Contagem de Vulnerabilidades**: Classificação automática por severidade (CRITICAL, HIGH, MEDIUM, LOW, UNKNOWN)
+- **Não-Bloqueante**: Pipeline continua mesmo com vulnerabilidades encontradas (`--exit-code 0`)
+
+### Como Funciona o Scanner
+
+```bash
+# Instalação do Trivy (se necessário)
+curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b .
+
+# Scan da imagem com saída em tabela
+trivy image --format table --exit-code 0 andrrade/meu-frontend:BUILD_ID
+
+# Scan da imagem com saída em JSON para análise
+trivy image --format json --quiet andrrade/meu-frontend:BUILD_ID > frontend-scan.json
+```
+
+### Relatório de Vulnerabilidades
+
+O scanner gera automaticamente um resumo das vulnerabilidades encontradas:
+
+```
+Frontend - Total: 25 (UNKNOWN: 2, LOW: 10, MEDIUM: 8, HIGH: 4, CRITICAL: 1)
+Backend - Total: 18 (UNKNOWN: 1, LOW: 7, MEDIUM: 6, HIGH: 3, CRITICAL: 1)
+```
+
+## 📊 Análise de Segurança
+
+### Tipos de Severidade
+
+- **CRITICAL**: Vulnerabilidades críticas que devem ser corrigidas imediatamente
+- **HIGH**: Vulnerabilidades de alta prioridade
+- **MEDIUM**: Vulnerabilidades de prioridade média
+- **LOW**: Vulnerabilidades de baixa prioridade
+- **UNKNOWN**: Vulnerabilidades sem classificação definida
+
+## 📚 Referências
+
+- [Documentação oficial do Trivy](https://aquasecurity.github.io/trivy/)
+
+---
+
+## Jenkins file com o trivy adicionado:
 
 ```jenkinsfile
 pipeline {
