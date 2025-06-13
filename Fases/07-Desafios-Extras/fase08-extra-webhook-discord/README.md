@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> Embora eu tenha compartilhado meu webhook do Discord durante o desenvolvimento, por questões de segurança, ele foi apagado após a finalização do projeto, já que chegou a ficar público no meu GitHub.
+
 Para colocar o webhook no discord, instale no jenkins o plugin `Discord Notifier`
 
 ![img01](../../../assets/fase08-extra-webhook-discord/img01.png)
