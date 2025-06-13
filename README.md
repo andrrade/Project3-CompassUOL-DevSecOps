@@ -90,7 +90,7 @@ Para este projeto, utilizei o sistema operacional [Pop!\_OS](https://system76.co
     - [X] Print do Jenkins.
     - [X] Apresentar pipeline funcionando: build, push e deploy.  
 
-- [Extras](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/tree/main/Fases/07-Desafios-Extras)  
+- Fase 7: [Extras](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/tree/main/Fases/07-Desafios-Extras)  
 
   - [X] Criar uma etapa após o push da imagem de container, realizar o scanner de vulnerabilidades com o **Trivy**. 
   - [Clique aqui](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/blob/main/Fases/07-Desafios-Extras/fase06-extra-trivy/README.md).
@@ -101,6 +101,9 @@ Para este projeto, utilizei o sistema operacional [Pop!\_OS](https://system76.co
   - [ ] Subir o **SonarQube** em ambiente Docker, conectá-lo ao Jenkins e enviar o código para análise **SAST**  
   - [ ] Utilizar **Helm Chart** para implantar a aplicação no Kubernetes  
 
+- Fase 8
+  - [X] [Considerações Finais](https://github.com/andrrade/Project3-CompassUOL-DevSecOps/tree/main/Fases/08-Consideracoes-Finais)
+  
 ---
 
 ## Apresentação Final
