@@ -330,6 +330,14 @@ pipeline {
 3. ID: `kubeconfig`
 4. Faça upload do arquivo kubeconfig
 
+## Credenciais do GitHub
+1. Acesse: Gerenciar Jenkins > Credenciais.
+2. Clique em: Sistema > Global credentials (global).
+3. Adicione uma credencial do tipo Username with password:
+4. ID: github-creds
+5. Username: seu_usarname
+6. Password: Sua senha do GitHub
+
 ## 🚀 Executando a Pipeline
 
 1. Acesse sua pipeline no Jenkins
