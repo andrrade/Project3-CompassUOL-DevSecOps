@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> Ao ativar o ngrok, mantenha o terminal aberto, pois fechá-lo encerrará o túnel.
+
 1. Tenha o ngrok instalado e faça ele direcionar para a porta onde está o jenkins (no meu caso, ele estava dentro da VM):
 
 ![img01](../../../assets/fase07-extra-webhook-github/img01.png)
