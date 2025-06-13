@@ -1,4 +1,4 @@
-## ✍️ Consideração Final
+## ✍🏻 Considerações Finais
 
 Ao longo deste projeto, ficou claro que a automação vai muito além da execução de tarefas técnicas. Ela representa uma mudança de mentalidade, um compromisso com a qualidade, com a agilidade e com a segurança em cada etapa do desenvolvimento. Trabalhar com CI/CD utilizando Jenkins e outras ferramentas modernas como Docker, FastAPI e Kubernetes trouxe desafios reais, mas também proporcionou aprendizados valiosos que dificilmente seriam adquiridos apenas na teoria.
 
