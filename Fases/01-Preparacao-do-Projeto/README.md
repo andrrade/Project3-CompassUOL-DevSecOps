@@ -143,9 +143,17 @@ Abra o navegador em: http://localhost:3000
 ![Teste rota 3](../../assets/fase01/img12.png)
 
 > [!IMPORTANT]
-> Esse frontend mostrado na imagem, era o frontend para testes, após concluir o projeto, deixei ele melhor estilizado, como pode ser visto nessa imagem:
+> Esse frontend mostrado na imagem, era o frontend para testes, após concluir o projeto, deixei ele melhor estilizado, como pode ser visto nessas imagem:
 
-![Frontend-Final]()
+### Frontend para PC:
+
+![Frontend-Final](../../assets/frontend-final.png)
+
+### Frontend Responsivo:
+
+![Frontend-Final](../../assets/frontend-responsivo.png)
+
+---
 
 ## ✅ Entregáveis Concluídos
 
