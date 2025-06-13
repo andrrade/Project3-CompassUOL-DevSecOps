@@ -145,8 +145,6 @@ Abra o navegador em: http://localhost:3000
 > [!IMPORTANT]
 > Esse frontend mostrado na imagem, era o frontend para testes, após concluir o projeto, deixei ele melhor estilizado, como pode ser visto nessas imagem:
 
-### Frontend para PC:
-
 <div align="center">
   <h3>Frontend Responsivo:</h3>
   <img src="../../assets/frontend-final.png" alt="Frontend PC">
