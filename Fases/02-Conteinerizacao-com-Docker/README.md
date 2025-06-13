@@ -31,9 +31,6 @@ Antes de começar, certifique-se de ter instalado:
 ```bash
 docker --version
 docker-compose --version
-
-# Verificar login no Docker Hub
-docker login
 ```
 
 ![img01](../../assets/fase02/img01.png)

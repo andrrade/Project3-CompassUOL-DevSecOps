@@ -174,7 +174,7 @@ Após a instalação, acesse Jenkins pelo IP da VM: `http://192.168.121.152:8080
 
 ![Reiniciando Jenkins](../../assets/fase04-05/img12.png)
 
-8. Faça login novamente com suas credenciais
+8. Faça login novamente com suas credenciais, e habilite a opção `keep me signed in`
 
 ![Login Jenkins](../../assets/fase04-05/img13.png)
 
@@ -182,16 +182,18 @@ Verifique se os plugins foram instalados indo em **Installed Plugins** e procura
 
 ### 3. Criação da Pipeline
 
-1. Habilite **GitHub hook trigger** se necessário
+1. Habilite **GitHub hook trigger** para depois fazer o webhook do GitHub funcionar
 
 ![GitHub hook trigger](../../assets/fase04-05/img-webhook.png)
 
 2. Clique em **Novo Item**
 
+3. Selecione **Pipeline**, digite o nome do projeto (ex: "projeto3") e clique em OK
+
+4. Em **Pipeline Definition**, selecione **"Pipeline script from SCM"**
+
 ![Criando novo item](../../assets/fase04-05/img14.png)
 
-3. Selecione **Pipeline**, digite o nome do projeto (ex: "projeto3") e clique em OK
-4. Em **Pipeline Definition**, selecione **"Pipeline script from SCM"**
 5. Selecione **Git** como SCM e cole a URL do seu repositório
 
 ![Configurando SCM](../../assets/fase04-05/img15.png)
@@ -348,8 +350,8 @@ pipeline {
 ## 🔗 Referências
 
 - [Vídeo Tutorial - Veronez](https://www.youtube.com/watch?v=mvtVL5eivzo&t=4683s)
-- Documentação oficial do Jenkins
-- Documentação oficial do Kubernetes
+- [Documentação oficial do Jenkins](https://www.jenkins.io/doc/)
+- [Documentação oficial do Kubernetes](https://kubernetes.io/docs/home/)
 
 ## 📝 Observações
 
